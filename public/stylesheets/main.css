@@ -1,0 +1,15 @@
+.pato{
+    width: 100%;
+}
+
+#sinpadding{
+    padding: 0;
+}
+
+.img-thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form{
+    display: inline;
+}

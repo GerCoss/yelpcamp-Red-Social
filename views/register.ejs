@@ -1,0 +1,24 @@
+<% include partials/header %>
+<h1>REGISTRARSE</h1>
+
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="Nombre de usuario">
+    <br>
+    <input type="password" name="password" placeholder="Contraseña" id="myInput">
+    <input type="checkbox" onclick="myFunction()">Mostrar contraseña
+    <br>
+    <button>Registrarse</button>
+</form>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+
+<% include partials/footer %>
