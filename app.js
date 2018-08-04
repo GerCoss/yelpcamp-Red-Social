@@ -20,7 +20,8 @@ var commentRoutes = require("./routes/comments"),
 
 
 //settings
-mongoose.connect("mongodb://localhost/yelp_camp13");
+// mongoose.connect("mongodb://localhost/yelp_camp13");
+mongoose.connect("mongodb://GERcoss:5535668694g@ds255715.mlab.com:55715/yelpcamp");
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
