@@ -20,8 +20,9 @@ var commentRoutes = require("./routes/comments"),
 
 
 //settings
-// mongoose.connect("mongodb://localhost/yelp_camp13");
-mongoose.connect(process.env.DATABASEURL);
+// DATABASEURL es una varible que contiene la ruta de conexion de la base de datos
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp13";
+mongoose.connect(url);
 
 
 app.set('port', process.env.PORT || 3000);
